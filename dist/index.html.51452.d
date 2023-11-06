@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/recherche.f3b972e4.css">
+    <link rel="stylesheet" href="/index.b680cd1b.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Roboto+Flex:opsz,wght@8..144,100;8..144,300;8..144,500;8..144,700;8..144,900&display=swap" rel="stylesheet">
+    <title>ECF Vidéotèque</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="#" class="nav-icon" aria-label="visit homepage" aria-current="page">
+                <img src="/movie.9975d9a8.svg" alt="icon">
+                <span>Videothèque</span>
+            </a>
+            <div class="main-navlinks">
+                <button class="hamburger" type="button" aria-label="Toggle navigation" aria-expanded="false">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <div class="navlinks-container">
+                    <a href="#" aria-current="page">Accueil</a>
+                    <a href="/recherche.html">Recherche</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <table id="filmTable">
+            <thead>
+                <tr>
+                    <th>Titre</th>
+                    <th>Année</th>
+                    <th>Réalisateur</th>
+                    <th>Genre</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody id="films-table-body">
+                <!-- Les films seront ajoutés ici dynamiquement -->
+            </tbody>
+        </table>
+
+        
+        <button id="showFormButton">Ajouter</button>
+        <div id="modal" class="modal">
+            <div class="modal-content">
+                <span class="close-button" id="closeModal">&times;</span>
+                <h2>Ajouter un film</h2>
+                <form id="filmForm">
+                    <label for="title">Titre:</label>
+                    <input type="text" id="title" name="title" required=""><br>
+        
+                    <label for="year">Année:</label>
+                    <input type="number" id="year" name="year" required=""><br>
+        
+                    <label for="author">Auteur:</label>
+                    <input type="text" id="author" name="author" required=""><br>
+        
+                    <label for="genre">Genre:</label>
+                    <input type="text" id="genre" name="genre" required=""><br>
+        
+                    <button type="submit">Sauvegarder</button>
+                </form>
+            </div>
+        </div>
+    </main>
+    
+
+    <script src="/index.7cf32ae9.js" defer=""></script>
+    <script src="/recherche.65ef9356.js" defer=""></script>
+</body>
+</html>

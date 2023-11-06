@@ -1,0 +1,111 @@
+#element{
+    display: flex;
+    justify-content: center;
+    font-size: 35px;
+}
+
+#search-container{
+    display: flex;
+    justify-content: center;
+}
+
+#searchForm {
+    border: 2px solid gray;
+    border-radius: 5px;
+    /* margin-right: 20%;
+    margin-left: 20%; */
+    background-color: grey;
+}
+
+#titleInput,
+#yearInput,
+#typeSelect {
+    flex-direction: row;
+    justify-content: space-around;
+    width: 250px;
+    padding: 12px 20px;
+    margin: 10px 20px;
+    gap: 10%;
+    box-sizing: border-box;
+}
+
+button[type=submit] {
+    display: block;
+    width: 30%;
+    background-color: #008CBA;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 300px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#results {
+    padding-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+#results div {
+    /* Style pour les divs qui contiennent les résultats */
+    background: grey;
+    margin-top: 15px;
+    padding: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#results img {
+    width: 200px;
+    /* Assure que l'image couvre toute la largeur de la carte */
+    height: 300px;
+    /* Garde l'aspect ratio de l'image intact */
+    display: block;
+    /* Élimine l'espace en-dessous de l'image */
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+/* Met en forme les titres et les années des films dans les cartes */
+#results h3,
+#results p {
+    margin: 10px;
+    width: 200px;
+    overflow: hidden;
+    /* Assure que le contenu ne dépasse pas de la carte */
+    white-space: normal;
+    /* S'assure que le texte va à la ligne */
+    word-wrap: break-word;
+}
+
+#pagination {
+    margin-left: 50px;
+    margin-top: 20px;
+    
+}
+
+/* Styles pour la pagination */
+#pagination button {
+    padding: 5px 10px;
+    margin-right: 5px;
+    background-color: #007bff;
+    border: none;
+    border-radius: 3px;
+    color: white;
+    cursor: pointer;
+}
+
+#pagination button:hover {
+    background-color: #0056b3;
+}
+
+#pagination button:first-child {
+    margin-bottom: 5px;
+}
+
+
+#pagination button:last-child {
+    margin-top: 5px;
+}

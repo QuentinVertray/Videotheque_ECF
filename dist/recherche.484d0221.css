@@ -1,0 +1,98 @@
+#element {
+  justify-content: center;
+  font-size: 35px;
+  display: flex;
+}
+
+#search-container {
+  justify-content: center;
+  display: flex;
+}
+
+#searchForm {
+  background-color: gray;
+  border: 2px solid gray;
+  border-radius: 5px;
+}
+
+#titleInput, #yearInput, #typeSelect {
+  box-sizing: border-box;
+  flex-direction: row;
+  justify-content: space-around;
+  gap: 10%;
+  width: 250px;
+  margin: 10px 20px;
+  padding: 12px 20px;
+}
+
+button[type="submit"] {
+  color: #fff;
+  cursor: pointer;
+  background-color: #008cba;
+  border: none;
+  border-radius: 4px;
+  width: 30%;
+  margin: 8px 300px;
+  padding: 14px 20px;
+  display: block;
+}
+
+#results {
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding-top: 20px;
+  display: flex;
+}
+
+#results div {
+  background: gray;
+  margin-top: 15px;
+  padding: 15px;
+  box-shadow: 0 2px 4px #0000001a;
+}
+
+#results img {
+  width: 200px;
+  height: 300px;
+  margin-top: 10px;
+  margin-left: 10px;
+  display: block;
+}
+
+#results h3, #results p {
+  white-space: normal;
+  word-wrap: break-word;
+  width: 200px;
+  margin: 10px;
+  overflow: hidden;
+}
+
+#pagination {
+  margin-top: 20px;
+  margin-left: 50px;
+}
+
+#pagination button {
+  color: #fff;
+  cursor: pointer;
+  background-color: #007bff;
+  border: none;
+  border-radius: 3px;
+  margin-right: 5px;
+  padding: 5px 10px;
+}
+
+#pagination button:hover {
+  background-color: #0056b3;
+}
+
+#pagination button:first-child {
+  margin-bottom: 5px;
+}
+
+#pagination button:last-child {
+  margin-top: 5px;
+}
+
+/*# sourceMappingURL=recherche.484d0221.css.map */

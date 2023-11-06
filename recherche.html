@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/recherche.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Roboto+Flex:opsz,wght@8..144,100;8..144,300;8..144,500;8..144,700;8..144,900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Recherche</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="#" class="nav-icon" aria-label="visit homepage" aria-current="page">
+                <img src="./assets/img/movie.svg" alt="icon">
+                <span>Videothèque</span>
+            </a>
+            <div class="main-navlinks">
+                <button class="hamburger" type="button" aria-label="Toggle navigation" aria-expanded="false">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <div class="navlinks-container">
+                    <a href="index.html" aria-current="page">Accueil</a>
+                    <a href="recherche.html">Recherche</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <span id="element"></span>
+        <div id="container">
+            <div id="search-container">
+                <form id="searchForm">
+                    <input type="text" id="titleInput" placeholder="Titre du film" required>
+                    <input type="number" id="yearInput" placeholder="Année">
+                    <select id="typeSelect">
+                        <option value="">Tous les types</option>
+                        <option value="movie">Film</option>
+                        <option value="series">Série</option>
+                        <option value="episode">Épisode</option>
+                    </select>
+                    <button type="submit">Rechercher</button>
+                </form>
+            </div>
+        
+            <!-- Zone d'affichage des résultats -->
+            <div id="results"></div>
+        
+            <!-- Zone de pagination -->
+            <div id="pagination"></div>
+        </div>
+    
+        
+    </main>
+    <script src="assets/js/nav.js" type="module"></script>
+    <script src="assets/js/recherche.js" type="module"></script>
+    
+
+</body>
+</html>

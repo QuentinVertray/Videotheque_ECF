@@ -1,0 +1,7 @@
+{
+  "dependencies": {
+    "bootstrap": "^5.3.2",
+    "sweetalert2": "^11.9.0",
+    "typed.js": "^2.0.16"
+  }
+}
