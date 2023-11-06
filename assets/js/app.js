@@ -41,13 +41,13 @@ function afficherFilms(films) {
         var cellTitle = row.insertCell();
         var cellYear = row.insertCell();
         var cellAuthors = row.insertCell();
-        var cellGenre = row.insertCell(); // Ajoutez la cellule pour le genre
+        var cellGenre = row.insertCell();
         var cellActions = row.insertCell();
 
         cellTitle.textContent = film.title;
         cellYear.textContent = film.years;
         cellAuthors.textContent = film.authors;
-        cellGenre.textContent = film.genre; // Affichez le genre dans la cellule correspondante
+        cellGenre.textContent = film.genre;
 
         var deleteButton = document.createElement("button");
         deleteButton.textContent = "Supprimer";
@@ -99,14 +99,13 @@ window.onload = function () {
         if (author.length < 5) {
             errors.push("Le réalisateur doit contenir au moins 5 caractères");
         }
-        // Ajoutez ici une validation pour le genre si nécessaire
 
         if (errors.length === 0) {
             films.push({
                 title: title.charAt(0).toUpperCase() + title.slice(1),
                 years: parseInt(year),
                 authors: author.charAt(0).toUpperCase() + author.slice(1),
-                genre: genre // Ajoutez le genre au nouvel objet film
+                genre: genre
             });
 
             modal.style.display = "none";
@@ -117,24 +116,20 @@ window.onload = function () {
     };
 };
 
-// Pour fermer le modal en cliquant en dehors
 window.onclick = function (event) {
     if (event.target == modal) {
         modal.style.display = "none";
     }
 };
 
-// Fonction pour trier par année en ordre décroissant
 function sortByYearDescending(films) {
     return films.sort((a, b) => b.years - a.years);
 }
 
-// Fonction pour trier par titre en ordre alphabétique
 function sortByTitleAlphabetical(films) {
     return films.sort((a, b) => a.title.localeCompare(b.title));
 }
 
-// Écouteur d'événement sur le changement de sélection du filtre
 document.getElementById('filter').addEventListener('change', function() {
     var sortedFilms;
     if (this.value === 'decroissant') {
@@ -142,8 +137,8 @@ document.getElementById('filter').addEventListener('change', function() {
     } else if (this.value === 'alphabétique') {
         sortedFilms = sortByTitleAlphabetical(films);
     } else {
-        sortedFilms = films; // Pas de tri, juste réinitialiser l'ordre des films au cas où un tri précédent a été appliqué
+        sortedFilms = films;
     }
 
-    afficherFilms(sortedFilms); // Utilisez la fonction d'affichage existante pour mettre à jour l'affichage
+    afficherFilms(sortedFilms);
 });

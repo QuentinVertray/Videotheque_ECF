@@ -11,7 +11,7 @@ body{
 
 header {
   height: 11vh;
-  border-bottom: 1px solid transparent; /* Cela peut aider à "fixer" la navbar en place */
+  border-bottom: 1px solid transparent;
 }
 
 nav{

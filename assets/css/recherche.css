@@ -50,7 +50,6 @@ button[type=submit] {
 }
 
 #results div {
-    /* Style pour les divs qui contiennent les résultats */
     background: grey;
     margin-top: 15px;
     padding: 15px;
@@ -59,24 +58,18 @@ button[type=submit] {
 
 #results img {
     width: 200px;
-    /* Assure que l'image couvre toute la largeur de la carte */
     height: 300px;
-    /* Garde l'aspect ratio de l'image intact */
     display: block;
-    /* Élimine l'espace en-dessous de l'image */
     margin-left: 10px;
     margin-top: 10px;
 }
 
-/* Met en forme les titres et les années des films dans les cartes */
 #results h3,
 #results p {
     margin: 10px;
     width: 200px;
     overflow: hidden;
-    /* Assure que le contenu ne dépasse pas de la carte */
     white-space: normal;
-    /* S'assure que le texte va à la ligne */
     word-wrap: break-word;
 }
 
@@ -86,7 +79,6 @@ button[type=submit] {
     
 }
 
-/* Styles pour la pagination */
 #pagination button {
     padding: 5px 10px;
     margin-right: 5px;
